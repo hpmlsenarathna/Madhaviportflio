@@ -1,199 +1,100 @@
 import React from "react";
 import { Mail, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import SectionTitle from "@/components/ui/SectionTitle";
 
 const ContactPage: React.FC = () => {
   const { toast } = useToast();
-  
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    const form = e.target as HTMLFormElement;
-    const formData = {
-      name: form.name.valueOf,
-      email: form.email.value,
-      subject: form.subject.value,
-      message: form.message.value
-    };
 
-    try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        toast({
-          title: "Message sent!",
-          description: "Thank you for your message. I'll get back to you soon.",
-        });
-        form.reset();
-      } else {
-        throw new Error('Failed to send message');
-      }
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again later.",
-        variant: "destructive"
-      });
-    }
+  const handleEmailClick = () => {
+    window.location.href =
+      "mailto:madhavi.lakmini2000@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Madhavi,%0A%0AI%20found%20your%20portfolio%20and...";
+    toast({
+      title: "Email client opened",
+      description: "Your message is ready to send via your email client.",
+    });
   };
-  
-  return (
-    <div className="min-h-screen py-12 bg-gray-50">
-      <section className="section-container">
-        <div className="mb-16">
-          <SectionTitle 
-            title="Get in Touch" 
-            subtitle="Feel free to contact me for any opportunities or questions"
-            centered={true}
-          />
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Information Section */}
-          <div className="animate-fade-in">
-            <div className="bg-white p-8 rounded-xl shadow-lg h-full border border-gray-100">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
-              
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="p-2 bg-blue-50 rounded-full mr-4">
-                    <Mail size={20} className="text-blue-600" aria-label="Email" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-700">Email</p>
-                    <a 
-                      href="mailto:madhavi.lakmini2000@gmail.com" 
-                      className="text-gray-600 hover:text-blue-600 transition-colors"
-                    >
-                      madhavi.lakmini2000@gmail.com
-                    </a>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="p-2 bg-blue-50 rounded-full mr-4">
-                    <Github size={20} className="text-blue-600" aria-label="GitHub" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-700">GitHub</p>
-                    <a 
-                      href="https://github.com/hpmlsenarathna" 
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-blue-600 transition-colors"
-                    >
-                      github.com/hpmlsenarathna
-                    </a>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="p-2 bg-blue-50 rounded-full mr-4">
-                    <Linkedin size={20} className="text-blue-600" aria-label="LinkedIn" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-700">LinkedIn</p>
-                    <a 
-                      href="https://www.linkedin.com/in/madhavi-senarathna-75a345299/" 
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-blue-600 transition-colors"
-                    >
-                      linkedin.com/in/madhavi-senarathna
-                    </a>
-                  </div>
+  return (
+    <div className="min-h-screen">
+      <section className="section-container">
+        <SectionTitle
+          title="Get in Touch"
+          subtitle="Feel free to contact me for any opportunities or questions"
+          centered={true}
+        />
+
+        <div className="max-w-4xl mx-auto animate-fade-in">
+          <div className="bg-white p-8 rounded-xl shadow-md">
+            <h3 className="text-2xl font-bold text-slate mb-6">
+              Contact Information
+            </h3>
+
+            <div className="space-y-6">
+              <div className="flex items-center">
+                <Mail size={20} className="text-primary mr-3" />
+                <div>
+                  <p className="font-medium text-slate">Email</p>
+                  <a
+                    href="mailto:madhavi.lakmini2000@gmail.com"
+                    className="text-slate-light hover:text-primary transition-colors"
+                  >
+                    madhavi.lakmini2000@gmail.com
+                  </a>
                 </div>
               </div>
-              
-              <div className="mt-10 pt-6 border-t border-gray-200">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Looking for opportunities</h3>
-                <p className="text-gray-600">
-                  I'm currently open to new opportunities in software engineering, frontend development and game development. 
-                  Feel free to reach out if you think I'd be a good fit for your team!
-                </p>
+
+              <div className="flex items-center">
+                <Github size={20} className="text-primary mr-3" />
+                <div>
+                  <p className="font-medium text-slate">GitHub</p>
+                  <a
+                    href="https://github.com/hpmlsenarathna"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-light hover:text-primary transition-colors"
+                  >
+                    github.com/hpmlsenarathna
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center">
+                <Linkedin size={20} className="text-primary mr-3" />
+                <div>
+                  <p className="font-medium text-slate">LinkedIn</p>
+                  <a
+                    href="https://www.linkedin.com/in/madhavi-senarathna-75a345299/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-light hover:text-primary transition-colors"
+                  >
+                    Connect with me on LinkedIn
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          
-          {/* Contact Form Section */}
-          <div className="animate-fade-in [animation-delay:200ms]">
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Send a Message</h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Name
-                  </label>
-                  <Input 
-                    id="name" 
-                    name="name"
-                    placeholder="Your name" 
-                    required 
-                    className="focus:ring-blue-500 focus:border-blue-500"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email
-                  </label>
-                  <Input 
-                    id="email" 
-                    name="email"
-                    type="email" 
-                    placeholder="Your email address" 
-                    required 
-                    className="focus:ring-blue-500 focus:border-blue-500"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                    Subject
-                  </label>
-                  <Input 
-                    id="subject" 
-                    name="subject"
-                    placeholder="Subject of your message" 
-                    required 
-                    className="focus:ring-blue-500 focus:border-blue-500"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Message
-                  </label>
-                  <Textarea 
-                    id="message" 
-                    name="message"
-                    placeholder="Your message" 
-                    rows={6} 
-                    required 
-                    className="focus:ring-blue-500 focus:border-blue-500"
-                  />
-                </div>
-                
-                <Button 
-                  type="submit" 
-                  className="w-full bg-blue-600 hover:bg-blue-700 transition-colors"
-                >
-                  Send Message
-                </Button>
-                
-                <p className="text-xs text-gray-500 text-center mt-2">
-                  I'll respond to your message as soon as possible.
-                </p>
-              </form>
+
+            <div className="mt-10 pt-6 border-t border-gray-200">
+              <h3 className="text-lg font-semibold text-slate mb-3">
+                Looking for opportunities
+              </h3>
+              <p className="text-slate-light">
+                I'm currently open to new opportunities in software engineering and game development.
+                Feel free to reach out if you think I'd be a good fit for your team!
+              </p>
+            </div>
+
+            {/* Email Button */}
+            <div className="mt-8">
+              <Button
+                onClick={handleEmailClick}
+                className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300"
+              >
+                <Mail className="mr-2" />
+                Send me an Email
+              </Button>
             </div>
           </div>
         </div>
