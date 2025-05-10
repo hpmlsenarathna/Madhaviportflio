@@ -9,16 +9,40 @@ import SectionTitle from "@/components/ui/SectionTitle";
 const ContactPage: React.FC = () => {
   const { toast } = useToast();
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    });
     
-    // Reset form
     const form = e.target as HTMLFormElement;
-    form.reset();
+    const formData = {
+      name: form.name.valueOf,
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.message.value
+    };
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        form.reset();
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive"
+      });
+    }
   };
   
   return (
@@ -111,6 +135,7 @@ const ContactPage: React.FC = () => {
                   </label>
                   <Input 
                     id="name" 
+                    name="name"
                     placeholder="Your name" 
                     required 
                     className="focus:ring-blue-500 focus:border-blue-500"
@@ -123,6 +148,7 @@ const ContactPage: React.FC = () => {
                   </label>
                   <Input 
                     id="email" 
+                    name="email"
                     type="email" 
                     placeholder="Your email address" 
                     required 
@@ -136,6 +162,7 @@ const ContactPage: React.FC = () => {
                   </label>
                   <Input 
                     id="subject" 
+                    name="subject"
                     placeholder="Subject of your message" 
                     required 
                     className="focus:ring-blue-500 focus:border-blue-500"
@@ -148,6 +175,7 @@ const ContactPage: React.FC = () => {
                   </label>
                   <Textarea 
                     id="message" 
+                    name="message"
                     placeholder="Your message" 
                     rows={6} 
                     required 
