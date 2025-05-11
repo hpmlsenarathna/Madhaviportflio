@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
               <Mail size={20} />
             </a>
             <a
-              href="#" // Add LinkedIn URL here when available
+              href="https://www.linkedin.com/in/madhavi-senarathna-75a345299"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate hover:text-primary transition-colors"
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
 
         <div className="mt-8 pt-8 border-t border-gray-200">
           <p className="text-center text-sm text-slate-light">
-            &copy; {new Date().getFullYear()} Lakmini Senarathna. All rights reserved.
+            &copy; {new Date().getFullYear()} Madhavi Senarathna rights reserverd.
           </p>
         </div>
       </div>

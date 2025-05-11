@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
               <p className="text-lg md:text-xl text-slate-light mt-6">
                 Aspiring Software Engineer | Frontend & Game Dev Enthusiast
               </p>
-              <p className="mt-6 text-slate max-w-lg">
+              <p className="mt-6 text-slate max-w-lg   text-justify">
                 I'm a software engineer, frontend developer and game developer based in Sri Lanka, passionate about 
                 creating engaging digital experiences and solving problems through code.
               </p>

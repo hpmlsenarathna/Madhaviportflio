@@ -88,19 +88,19 @@ const AboutPage: React.FC = () => {
               Hi, I'm <span className="gradient-text">Madhavi Senarathna</span>
             </h3>
             
-            <p className="text-slate-light mb-4">
+            <p className="text-slate-light mb-4  text-justify">
               I'm an aspiring software engineer, frontend developer and game developer based in Sri Lanka.
               I'm passionate about creating engaging and interactive experiences
               through code, with a focus on frontend development and game design.
             </p>
             
-            <p className="text-slate-light mb-4">
+            <p className="text-slate-light mb-4   text-justify">
               My journey in technology began during my undergraduate studies,
               where I discovered my love for problem-solving and creating digital
               experiences that users enjoy interacting with.
             </p>
             
-            <p className="text-slate-light">
+            <p className="text-slate-light text-justify">
               When I'm not coding, you can find me exploring new game design concepts,
               learning about UI/UX principles, or experimenting with creative coding projects.
             </p>
