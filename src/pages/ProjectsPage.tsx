@@ -23,7 +23,7 @@ const ProjectsPage: React.FC = () => {
         "Implemented game progression system and achievements."
       ],
       githubUrl: "https://github.com/hpmlsenarathna/PhysicsQuest",
-      demoUrl: "https://drive.google.com/file/d/1eSrbBv2wE0CjUld9WMQ54SU4dpCxA7S-/view?usp=sharing"
+      demoUrl: "https://www.linkedin.com/posts/madhavi-senarathna-75a345299_miniproject-physicsquest-gamedevelopment-activity-7293852459922247680-AHND?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEghnfYBCJbCDRojd4O5MLN71ormYbkkNsk"
     },
     {
       id: 2,
@@ -38,7 +38,7 @@ const ProjectsPage: React.FC = () => {
         "Created level progression system with increasing difficulty."
       ],
       githubUrl: "https://github.com/hpmlsenarathna/MeowShot",
-      demoUrl: "https://drive.google.com/file/d/1iKjU4c-vgJIyBFesqHtEXYgZNLqePIRK/view?usp=sharing"
+      demoUrl: "https://www.linkedin.com/posts/madhavi-senarathna-75a345299_meowshot-physicsgame-unity3d-activity-7293854071684243457-8JTD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEghnfYBCJbCDRojd4O5MLN71ormYbkkNsk"
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ const ProjectsPage: React.FC = () => {
         "Managed state with Redux and deployed on cloud platform."
       ],
       githubUrl: "https://github.com/hpmlsenarathna/Short_Expiery_ManagementApp",
-      demoUrl: "https://drive.google.com/file/d/13CKbkgZrEKmNKC2--lUqUc4yKTzNqFv_/view?usp=sharing"
+      demoUrl: ""
     },
     {
       id: 4,
@@ -68,7 +68,7 @@ const ProjectsPage: React.FC = () => {
         "Implemented user registration and scheduling modules."
       ],
       githubUrl: "https://github.com/VDDayarathne/SMS_frontend",
-      demoUrl: "https://drive.google.com/file/d/1fqqp77i2DSG7p-XRocLCbEUF1ts3bUnj/view?usp=sharing"
+      demoUrl: "https://www.linkedin.com/posts/madhavi-senarathna-75a345299_sportsmanagement-javaspringboot-reactjs-activity-7293884034709893120-4Pi9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEghnfYBCJbCDRojd4O5MLN71ormYbkkNsk"
     },
     {
       id: 5,
@@ -98,7 +98,7 @@ const ProjectsPage: React.FC = () => {
         "Worked on integration with backend API services."
       ],
       githubUrl: "https://github.com/mtsachintha/Library-Frontend",
-      demoUrl: "https://drive.google.com/file/d/1CwoL7nFd3UtGw13coufTIbChfeemzDfo/view?usp=sharing"
+      demoUrl: "https://www.linkedin.com/posts/madhavi-senarathna-75a345299_webdevelopment-librarymanagement-studentproject-activity-7327576075130023936-QeTi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEghnfYBCJbCDRojd4O5MLN71ormYbkkNsk"
     },
     {
       id: 7,
