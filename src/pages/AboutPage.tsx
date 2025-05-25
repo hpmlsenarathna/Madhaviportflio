@@ -6,62 +6,56 @@ import profilePlaceholder from "../assets/profile-placeholder.png";
 
 const AboutPage: React.FC = () => {
   const skills = {
-    frontend: ["React.js", "Tailwind CSS", "HTML", "JavaScript", "Node.js"],
-    backend: ["Java Spring Boot", "MySQL", "Node.js", "PostgreSQL", "Python"],
-    gameDev: ["Unity", "C#"],
-    tools: ["IntelliJ IDEA", "Figma", "GitHub"]
+    Programming_Languages : [ "Java", "JavaScript", "TypeScript", "C#", "C" ], 
+    Frameworks_and_Libraries : ["React.js", "Tailwind CSS", "HTML", "React Router", "Node.js", "Express.js"],
+     Tools_and_Technologies : ["Git", "GitHub", "Visual Studio Code", "Visual Studio", "Figma(for design thinking/prototyping)","Postman(for API testing)", "Unity(2020 LTS or newer)"],
+     Databases : ["MySQL", "PostgreSQL", "Prisma(ORM for database interaction)"],
   };
 
   const projects = [
    
-       {
-         title: "PhysicsQuest - A Physics Learning Game",
-         type: "Group Project",
-         year: "2024",
-         technologies: ["Unity", "C#"],
-         description: "Developed interactive game features using Unity and C# by implementing game mechanics, animations, and user interactions for an engaging player experience."
+     
+    {
+         title: "Short Expiry Drugs Management System",
+         type: "Individual Project",
+         year: "Ongoing",
+         technologies: ["React, React Router, React-Bootstrap / Tailwind, JavaScript, Node.js, Express.js,PostgreSQL, Prisma, Postman"],
+         description: " Implemented a full-stack inventory management system for Avissawella DGH indoor pharmacy, leading both frontend and backend development to streamline drug stock tracking, order management, and short-expiry drug monitoring"
        },
        {
          title: "MeowShot - A Physics-Based Slingshot Game",
          type: "Individual Project",
          year: "2024",
          technologies: ["Unity", "C#"],
-         description: "Developed interactive game features using Unity and C# by implementing game mechanics, animations, and user interactions for an engaging player experience."
+         description: " Responsible for the end-to-end design and development of the game, including gameplay mechanics, physics integration, UI/UX design, and frontend interface."
        },
-       {
-         title: "Short Expiry Drugs Management System",
-         type: "Individual Project",
-         year: "Ongoing",
-         technologies: ["Next.js", "Node.js", "JavaScript", "PostgreSQL"],
-         description: "Designed and developed a full-stack individual project using these tools and frameworks, implementing dynamic UI, state management, server-side rendering, and database integration"
-       },
-       {
-         title: "Alvy - Python based chat app",
-         type: "Individual Project",
-         year: "2025",
-         technologies: ["Python", "HTML", "CSS", "Flask", "WebSockets"],
-         description: "Developed chat application called Alvy (Python/Flask/WebSockets) alongside my frontend skills (React/Tailwind/Figma)"
+ {
+         title: "PhysicsQuest - A Physics Learning Game",
+         type: "Group Project",
+         year: "2024",
+         technologies: ["Unity", "C#"],
+         description: "Contributed to a mobile physics simulation game by integrating my own physics-based minigame as a module and assisting in designing the main project’s UI to enhance the overall user experience and educational value."
        },
        {
          title: "Sports Management System for Sport Centre",
          type: "Group Project",
          year: "2024",
-         technologies: ["HTML", "TailwindCSS", "JavaScript", "React.js"],
-         description: "Developed responsive and interactive user interfaces using modern web technologies including React.js, JavaScript, HTML5, and TailwindCSS"
+         technologies: ["JavaScript , HTML, Tailwind CSS, React.js"],
+         description: " Built the responsive and interactive UI for a unified platform managing campus sports activities, contributing to the frontend development to enhance user experience and centralize access to sports activity information."
        },
-       {
-         title: "Library Management System",
-         type: "Group Project",
-         year: "2024",
-         technologies: ["HTML", "CSS", "JavaScript"],
-         description: "Contributed to frontend development by building responsive and interactive user interfaces using these tools"
+        {
+         title: "Alvy - Python based chat app",
+         type: "Individual Project",
+         year: "2025",
+         technologies: [ "Python, HTML, Tailwind CSS"],
+         description: " Engineered a Python-based real-time chat application using Flask and WebSockets, focusing on message handling, user sessions, and a user-friendly frontend for smooth multi-user communication."
        },
        {
          title: "Patient Record-Keeping System for Apeksha Hospital",
          type: "Group Project",
          year: "Ongoing",
-         technologies: ["React.js", "Node.js", "JavaScript", "HTML5", "TailwindCSS"],
-         description: "Developed responsive and interactive user interfaces using modern web technologies including React.js, JavaScript, HTML5, and TailwindCSS"
+         technologies: ["JavaScript,  React.js, Tailwind CSS, HTML"],
+         description: " Developed both frontend and backend for Apeksha Hospital's Patient Record System, focusing on responsive UI and efficient data management to improve patient record accessibility."
        },
   ];
 
@@ -154,36 +148,36 @@ const AboutPage: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-white p-8 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold text-slate mb-4">Frontend Development</h3>
+            <h3 className="text-xl font-bold text-slate mb-4">Programming Languages</h3>
             <div className="flex flex-wrap">
-              {skills.frontend.map((skill) => (
+              {skills.Programming_Languages.map((skill) => (
                 <SkillBadge key={skill} name={skill} />
               ))}
             </div>
           </div>
 
           <div className="bg-white p-8 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold text-slate mb-4">Backend Development</h3>
+            <h3 className="text-xl font-bold text-slate mb-4">Frameworks and Libraries</h3>
             <div className="flex flex-wrap">
-              {skills.backend.map((skill) => (
+              {skills.Frameworks_and_Libraries.map((skill) => (
                 <SkillBadge key={skill} name={skill} />
               ))}
             </div>
           </div>
 
           <div className="bg-white p-8 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold text-slate mb-4">Game Development</h3>
+            <h3 className="text-xl font-bold text-slate mb-4">Tools and Technologies</h3>
             <div className="flex flex-wrap">
-              {skills.gameDev.map((skill) => (
+              {skills.Tools_and_Technologies.map((skill) => (
                 <SkillBadge key={skill} name={skill} />
               ))}
             </div>
           </div>
 
           <div className="bg-white p-8 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold text-slate mb-4">Tools & Software</h3>
+            <h3 className="text-xl font-bold text-slate mb-4">Databases</h3>
             <div className="flex flex-wrap">
-              {skills.tools.map((skill) => (
+              {skills.Databases.map((skill) => (
                 <SkillBadge key={skill} name={skill} />
               ))}
             </div>

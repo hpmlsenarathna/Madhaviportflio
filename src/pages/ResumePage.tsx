@@ -60,20 +60,21 @@ const ResumePage: React.FC = () => {
               <h3 className="text-xl font-bold text-slate mb-4">Skills</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <h4 className="font-semibold text-slate mb-2">Frontend Development</h4>
-                  <p className="text-slate-light">React.js, Tailwind CSS, HTML, JavaScript</p>
+                  <h4 className="font-semibold text-slate mb-2"> Programming Languages</h4>
+                  <p className="text-slate-light"> Java, JavaScript, TypeScript, C#, C</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate mb-2">Backend Development</h4>
-                  <p className="text-slate-light">Java Spring Boot, MySQL</p>
+                  <h4 className="font-semibold text-slate mb-2">Frameworks and Libraries</h4>
+                  <p className="text-slate-light">React.js, Tailwind CSS, HTML, React Router, Node.js, Express.js</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate mb-2">Game Development</h4>
-                  <p className="text-slate-light">Unity, C#</p>
+                  <h4 className="font-semibold text-slate mb-2">Tools and Technologies</h4>
+                  <p className="text-slate-light">Git, GitHub, Visual Studio Code, Visual Studio, Figma (for design thinking/prototyping),
+ Postman (for API testing), Unity (2020 LTS or newer)</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate mb-2">Tools & Software</h4>
-                  <p className="text-slate-light">IntelliJ IDEA, Figma, GitHub</p>
+                  <h4 className="font-semibold text-slate mb-2">Databases </h4>
+                  <p className="text-slate-light">MySQL, PostgreSQL, Prisma (ORM for database interaction)</p>
                 </div>
               </div>
             </div>
@@ -83,17 +84,18 @@ const ResumePage: React.FC = () => {
               
               <div className="mb-6">
                 <div className="flex justify-between items-start">
-                  <h4 className="font-semibold text-slate">PhysicsQuest – A Physics Learning Game</h4>
-                  <span className="text-sm text-slate-light">2024</span>
+                  <h4 className="font-semibold text-slate"> Short Expiry Drugs Management System</h4>
+                  <span className="text-sm text-slate-light">Ongoing</span>
                 </div>
-                <p className="text-slate-light mt-1">Game Developer (Group Project)</p>
+                <p className="text-slate-light mt-1">Full-stack Developer (Solo Project)</p>
                 <p className="text-slate-light mt-2">
-                  An educational mobile game designed with four mini-games to teach physics concepts 
-                  like friction, energy, and fluid pressure through interactive challenges.
+                 Implemented a full-stack inventory management system for Avissawella DGH indoor pharmacy, 
+                 leading both frontend and backend development to streamline drug stock tracking, order management, and short-expiry drug monitoring.
                 </p>
                 <div className="mt-2">
-                  <span className="text-sm font-medium text-slate">Tech Stack:</span>
-                  <span className="text-slate-light"> Unity, C#, Figma</span>
+                  <span className="text-sm font-medium text-slate">Key Technologies :</span>
+                  <span className="text-slate-light"> React, React Router, React-Bootstrap / Tailwind, JavaScript, Node.js, Express.js,
+ PostgreSQL, Prisma, Postman</span>
                 </div>
               </div>
               
@@ -108,7 +110,7 @@ const ResumePage: React.FC = () => {
                   Designed with playful physics and animation.
                 </p>
                 <div className="mt-2">
-                  <span className="text-sm font-medium text-slate">Tech Stack:</span>
+                  <span className="text-sm font-medium text-slate">Key Technologies:</span>
                   <span className="text-slate-light"> Unity, C#</span>
                 </div>
               </div>
