@@ -15,7 +15,7 @@ const ProjectsPage: React.FC = () => {
       year: "Ongoing",
       role: "Full Stack Developer (Solo Project)",
       description: " A full-stack solution for managing short-expiry pharmaceutical drugs, with dynamic UI, database integration, and expiry filtering.",
-      techStack: [" React, React Router, React-Bootstrap / Tailwind, JavaScript, Node.js, Express.js, PostgreSQL, Prisma, Postman"],
+      techStack: [" React", "React Router", "React-Bootstrap / Tailwind", "JavaScript", "Node.js", "Express.js", "PostgreSQL", "Prisma", "Postman"],
       contributions: [
        "Led the design and development of a full-stack inventory management system for Avissawella DGH indoor pharmacy.",
 "Built and integrated frontend and backend modules to efficiently manage drug stock, order processing, and inventory records.",
@@ -62,7 +62,7 @@ const ProjectsPage: React.FC = () => {
       year: "2024",
       role: "Frontend Developer (Group Project)",
       description: "A web application for managing sports center activities including scheduling and registrations.",
-      techStack: [" JavaScript , HTML, Tailwind CSS, React.js"],
+      techStack: [" JavaScript ", "HTML", "Tailwind CSS", "React.js"],
       contributions: [
         "Developed a responsive and interactive user interface for a centralized campus sports management platform.",
         "Focused on enhancing user experience by streamlining navigation and improving accessibility to sports activity information.",
@@ -77,7 +77,7 @@ const ProjectsPage: React.FC = () => {
       year: "Ongoing",
       role: "Frontend Developer (Group Project)",
       description: "A hospital record system to manage patient histories and appointments using modern web technologies.",
-      techStack: [" JavaScript,  React.js, Tailwind CSS, HTML"],
+      techStack: [" JavaScript",  "React.js", "Tailwind CSS", "HTML"],
       contributions: [
         "I developed both the frontend and backend of the Patient Record System for Apeksha Hospital.",
          "My focus was on creating a responsive and user-friendly interface to ensure ease of use for hospital staff.",
@@ -92,7 +92,7 @@ const ProjectsPage: React.FC = () => {
       year: "2025",
       role: "Full Stack Developer (Solo Project)",
       description: "A Python-based real-time chat application built using Flask and WebSockets.",
-      techStack: [" Python, HTML, Tailwind CSS"],
+      techStack: [" Python", "HTML", "Tailwind CSS"],
       contributions: [
         "Developed a real-time chat application in Python using Flask and WebSockets for seamless multi-user communication.",
 "Implemented efficient message handling and user session management to ensure reliability and performance.",

@@ -19,7 +19,7 @@ const AboutPage: React.FC = () => {
          title: "Short Expiry Drugs Management System",
          type: "Individual Project",
          year: "Ongoing",
-         technologies: ["React, React Router, React-Bootstrap / Tailwind, JavaScript, Node.js, Express.js,PostgreSQL, Prisma, Postman"],
+         technologies: [" React", "React Router", "React-Bootstrap / Tailwind", "JavaScript", "Node.js", "Express.js", "PostgreSQL", "Prisma", "Postman"],
          description: " Implemented a full-stack inventory management system for Avissawella DGH indoor pharmacy, leading both frontend and backend development to streamline drug stock tracking, order management, and short-expiry drug monitoring"
        },
        {
@@ -40,21 +40,21 @@ const AboutPage: React.FC = () => {
          title: "Sports Management System for Sport Centre",
          type: "Group Project",
          year: "2024",
-         technologies: ["JavaScript , HTML, Tailwind CSS, React.js"],
+         technologies: [" JavaScript ", "HTML", "Tailwind CSS", "React.js"],
          description: " Built the responsive and interactive UI for a unified platform managing campus sports activities, contributing to the frontend development to enhance user experience and centralize access to sports activity information."
        },
         {
          title: "Alvy - Python based chat app",
          type: "Individual Project",
          year: "2025",
-         technologies: [ "Python, HTML, Tailwind CSS"],
+         technologies: [ "Python", "HTML", "Tailwind CSS"],
          description: " Engineered a Python-based real-time chat application using Flask and WebSockets, focusing on message handling, user sessions, and a user-friendly frontend for smooth multi-user communication."
        },
        {
          title: "Patient Record-Keeping System for Apeksha Hospital",
          type: "Group Project",
          year: "Ongoing",
-         technologies: ["JavaScript,  React.js, Tailwind CSS, HTML"],
+         technologies: ["JavaScript",  "React.js", "Tailwind CSS", "HTML"],
          description: " Developed both frontend and backend for Apeksha Hospital's Patient Record System, focusing on responsive UI and efficient data management to improve patient record accessibility."
        },
   ];
